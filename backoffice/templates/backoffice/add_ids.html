@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Add IDS Deployment{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1 class="mt-4">Add IDS Deployment</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-success">Deploy IDS</button>
+        <a href="{% url 'ids_list' %}" class="btn btn-secondary">Back</a>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LynxSec</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0a0a0a;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background: linear-gradient(135deg, #0077ff, #00e0ff);
+            color: #fff;
+            padding: 50px 20px;
+            text-align: center;
+            border-bottom: 5px solid #0057b8;
+            position: relative;
+            overflow: hidden;
+        }
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3.5em;
+            z-index: 2;
+            position: relative;
+        }
+        header p {
+            font-size: 1.3em;
+            margin-top: 10px;
+            z-index: 2;
+            position: relative;
+        }
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 100px;
+        }
+        nav {
+            background: #121212;
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        nav a {
+            color: #00e0ff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #0077ff;
+        }
+        section {
+            background: #121212;
+            margin: 20px 0;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        section:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+        }
+        section h2 {
+            color: #00e0ff;
+            margin-top: 0;
+            font-size: 2em;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            background: #1f1f1f;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        ul li::before {
+            content: "\2713";
+            color: #00e0ff;
+            font-weight: bold;
+            display: inline-block;
+            width: 1.5em;
+            margin-right: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #121212;
+            color: #bbb;
+            margin-top: 40px;
+            font-size: 0.9em;
+            position: relative;
+        }
+        footer a {
+            color: #00e0ff;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        footer img {
+            width: 100px;
+            margin-top: 10px;
+        }
+        .cta {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .cta a {
+            text-decoration: none;
+            background: linear-gradient(135deg, #0077ff, #00e0ff);
+            color: white;
+            padding: 15px 40px;
+            font-size: 1.3em;
+            border-radius: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+            transition: background 0.3s, box-shadow 0.3s;
+        }
+        .cta a:hover {
+            background: linear-gradient(135deg, #0057b8, #0077ff);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="logo.webp" alt="LynxSec Logo" class="logo">
+        <h1>LynxSec</h1>
+        <p>Your Partner in Comprehensive Cybersecurity</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#products">Products</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Us</h2>
+            <p>At LynxSec, we specialize in providing all-in-one cybersecurity tools and services to help businesses secure their digital landscape. Our mission is to simplify security management while delivering robust protection for your network.</p>
+        </section>
+
+        <section id="products">
+            <h2>Our Products</h2>
+            <ul>
+                <li>All-in-One Security Management Tools</li>
+                <li>Open-Source SIEM Deployment</li>
+                <li>Log Management Solutions</li>
+                <li>Network Protection Systems</li>
+            </ul>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Extended Detection and Response (XDR)</li>
+                <li>Endpoint Detection and Response (EDR)</li>
+                <li>Network Security Consulting</li>
+                <li>Comprehensive Cybersecurity Audits</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Ready to secure your business? Reach out to LynxSec today. Email us at <a href="mailto:contact@lynxsec.com">contact@lynxsec.com</a>.</p>
+        </section>
+
+        <div class="cta">
+            <a href="#contact">Get in Touch</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 LynxSec. All rights reserved. <a href="#">Privacy Policy</a></p>
+        <img src="logo.webp" alt="LynxSec Logo">
+    </footer>
+</body>
+</html>

@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block title %}Security Alerts{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card shadow-sm">
+                <div class="card-header bg-danger text-white">
+                    <h4 class="text-center mb-0">Security Alerts</h4>
+                </div>
+                <div class="card-body">
+                    {% if alerts %}
+                        <ul class="list-group">
+                            {% for alert in alerts %}
+                                <li class="list-group-item">
+                                    <h5 class="mb-1">{{ alert.title }}</h5>
+                                    <p class="mb-1">{{ alert.description }}</p>
+                                    <small class="text-muted">Created: {{ alert.created_at|date:"Y-m-d H:i" }}</small>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    {% else %}
+                        <p class="text-center text-muted">No security alerts available.</p>
+                    {% endif %}
+                </div>
+                <div class="card-footer text-center">
+                    <a href="{% url 'dashboard' %}" class="btn btn-secondary">Back to Dashboard</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

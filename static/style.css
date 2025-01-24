@@ -1,0 +1,56 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+.sidebar {
+    height: 100vh; /* Full height */
+    padding: 15px;
+    overflow-y: auto; /* Scrollable if content overflows */
+}
+
+.sidebar a {
+    color: #00e0ff;
+    text-decoration: none;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.sidebar a:hover {
+    background: #0077ff;
+    color: #fff;
+}
+
+.nav-link.active {
+    background: #0056b3; /* Active background color */
+    color: #fff;
+}
+
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    border-radius: 10px 10px 0 0;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.list-group-item {
+    font-size: 1.1em;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    text-align: center;
+}
